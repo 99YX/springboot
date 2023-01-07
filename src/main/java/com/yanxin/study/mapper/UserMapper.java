@@ -15,5 +15,6 @@ public interface UserMapper {
     @Insert("insert into sys_user(username,password,nickname,email,phone,address) values(#{username},#{password},#{nickname},#{email},#{phone},#{address})")
     public abstract int insert(User user);
 
-    Integer update(User user);
+
+   Integer update(User user);
 }
